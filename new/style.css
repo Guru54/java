@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.typing {
+    border-right: 3px solid white;
+    display: inline-block;
+    padding-right: 5px;
+}
