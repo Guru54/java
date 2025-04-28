@@ -7,6 +7,7 @@ class maths {
             sum = sum + digit;
             a = a/10;
          }
-            System.out.println("sum of digit is: " + sum);
+         int b = 012;
+            System.out.println("sum of digit is: " + sum+ " b is : "+ b);
     }
 }

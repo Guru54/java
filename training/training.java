@@ -24,6 +24,7 @@ class training {
          int a = 'z';
         System.out.println(a);
 
-      
+    
+
     }
 }
