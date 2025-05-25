@@ -15,15 +15,20 @@ class sorting {
         }
     }
     // 1 second = 1000 milliseconds
-  public static void bubbleSort(int arr[]) {
-        int n = arr.length;
+  public static void bubbleSort(String sarr[]) {
+        int n = sarr.length;
+        // convert the string to char array
+        char[] arr = new char[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sarr[i].charAt(0);
+        }
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // swap arr[j] and arr[j+1]
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    arr[j + 1] = (char) temp;
                 }
             }
            // printArray(arr);
@@ -58,28 +63,38 @@ class sorting {
     }
 
     public static void main(String[] args) {
-        int arr[] = {64, 34, 25, 12, 22, 11, 90};
-        bubbleSort(arr);
-        System.out.println("Sorted array: ");
-        printArray(arr);
-        int x = 22;
-        System.out.println("Element to search: " + x);
-        System.out.println("searching the element : "+x);
-        delay(3000); // 1 second delay
-        System.out.println("almost done...");
-        delay(3000); // 1 second delay
-        System.out.println("done...");
-        int result = linearSearch(arr, x);
-        if (result == -1) {
-            System.out.println("Element not found");
-        } else {
-            System.out.println("Element found at index " + result);
+        // int arr[] = {64, 34, 25, 12, 22, 11, 90};
+        // bubbleSort(arr);
+        // System.out.println("Sorted array: ");
+        // printArray(arr);
+        // int x = 22;
+        // System.out.println("Element to search: " + x);
+        // System.out.println("searching the element : "+x);
+        // delay(3000); // 1 second delay
+        // System.out.println("almost done...");
+        // delay(3000); // 1 second delay
+        // System.out.println("done...");
+        // int result = linearSearch(arr, x);
+        // if (result == -1) {
+        //     System.out.println("Element not found");
+        // } else {
+        //     System.out.println("Element found at index " + result);
+        // }
+        // System.out.println("Searching using binary search...");
+        // delay(3000); // 1 second delay
+        // System.out.println("almost done...");
+        // delay(3000); // 1 second delay
+        // System.out.println("done...");
+        // binarySearch(arr, x);
+     String str[] = {"B","A","C","D"};
+     // sorting the given sorted string 
+        // using bubble sort
+        bubbleSort(str);
+        System.out.println("Sorted array: ");   
+        for (int i = 0; i < str.length; i++) {
+            System.out.print(str[i] + " ");
         }
-        System.out.println("Searching using binary search...");
-        delay(3000); // 1 second delay
-        System.out.println("almost done...");
-        delay(3000); // 1 second delay
-        System.out.println("done...");
-        binarySearch(arr, x);
+        System.out.println();
+
     }
 }
