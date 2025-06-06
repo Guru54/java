@@ -1,4 +1,3 @@
-
 class downloadFile extends Thread {
 
     private String file;
@@ -11,7 +10,7 @@ class downloadFile extends Thread {
         for (int i = 0; i <= 5; i++) {
             System.out.println(file + " downloading..." + i * 20 + "%");
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (Exception e) {
             }
         }
@@ -35,7 +34,6 @@ class intro {
             }
         }
         System.out.println("Loaded the main ui");
-
-       
     }
 }
+// today rcb won the mathch 
