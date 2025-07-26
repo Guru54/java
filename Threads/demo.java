@@ -38,6 +38,6 @@ class demo {
                 .reduce(0, (a, b) -> a > b ? a : b);
         //.orElse(0);
         System.out.println("Max of the list: " + max);
-
+       
     }
 }
